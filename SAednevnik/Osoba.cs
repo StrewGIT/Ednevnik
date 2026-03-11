@@ -55,7 +55,7 @@ namespace SAednevnik
 
         private void Osoba_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void BtnStart_Click(object sender, EventArgs e)

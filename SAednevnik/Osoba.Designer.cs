@@ -35,14 +35,14 @@
             this.TboxJmbg = new System.Windows.Forms.TextBox();
             this.TboxEmail = new System.Windows.Forms.TextBox();
             this.TboxLozinka = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.LblID = new System.Windows.Forms.Label();
+            this.LblIme = new System.Windows.Forms.Label();
+            this.LblPrezime = new System.Windows.Forms.Label();
+            this.LblAdresa = new System.Windows.Forms.Label();
+            this.LblJMBG = new System.Windows.Forms.Label();
+            this.LblEmail = new System.Windows.Forms.Label();
+            this.LblLozinka = new System.Windows.Forms.Label();
+            this.LblUloga = new System.Windows.Forms.Label();
             this.TboxUloga = new System.Windows.Forms.TextBox();
             this.BtnStart = new System.Windows.Forms.Button();
             this.BtnPrevious = new System.Windows.Forms.Button();
@@ -102,85 +102,85 @@
             this.TboxLozinka.Size = new System.Drawing.Size(148, 20);
             this.TboxLozinka.TabIndex = 6;
             // 
-            // label1
+            // LblID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "ID:";
+            this.LblID.AutoSize = true;
+            this.LblID.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblID.Location = new System.Drawing.Point(68, 27);
+            this.LblID.Name = "LblID";
+            this.LblID.Size = new System.Drawing.Size(27, 16);
+            this.LblID.TabIndex = 7;
+            this.LblID.Text = "ID:";
             // 
-            // label2
+            // LblIme
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(68, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 16);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Ime:";
+            this.LblIme.AutoSize = true;
+            this.LblIme.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblIme.Location = new System.Drawing.Point(68, 69);
+            this.LblIme.Name = "LblIme";
+            this.LblIme.Size = new System.Drawing.Size(37, 16);
+            this.LblIme.TabIndex = 8;
+            this.LblIme.Text = "Ime:";
             // 
-            // label3
+            // LblPrezime
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(68, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 16);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Prezime:";
+            this.LblPrezime.AutoSize = true;
+            this.LblPrezime.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPrezime.Location = new System.Drawing.Point(68, 111);
+            this.LblPrezime.Name = "LblPrezime";
+            this.LblPrezime.Size = new System.Drawing.Size(63, 16);
+            this.LblPrezime.TabIndex = 9;
+            this.LblPrezime.Text = "Prezime:";
             // 
-            // label4
+            // LblAdresa
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(68, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 16);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Adresa:";
+            this.LblAdresa.AutoSize = true;
+            this.LblAdresa.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAdresa.Location = new System.Drawing.Point(68, 153);
+            this.LblAdresa.Name = "LblAdresa";
+            this.LblAdresa.Size = new System.Drawing.Size(58, 16);
+            this.LblAdresa.TabIndex = 10;
+            this.LblAdresa.Text = "Adresa:";
             // 
-            // label5
+            // LblJMBG
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(68, 195);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 16);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "JMBG:";
+            this.LblJMBG.AutoSize = true;
+            this.LblJMBG.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblJMBG.Location = new System.Drawing.Point(68, 195);
+            this.LblJMBG.Name = "LblJMBG";
+            this.LblJMBG.Size = new System.Drawing.Size(47, 16);
+            this.LblJMBG.TabIndex = 11;
+            this.LblJMBG.Text = "JMBG:";
             // 
-            // label6
+            // LblEmail
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(68, 237);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 16);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "E-Mail:";
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.Location = new System.Drawing.Point(68, 237);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(53, 16);
+            this.LblEmail.TabIndex = 12;
+            this.LblEmail.Text = "E-Mail:";
             // 
-            // label7
+            // LblLozinka
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(68, 279);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 16);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Lozinka:";
+            this.LblLozinka.AutoSize = true;
+            this.LblLozinka.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLozinka.Location = new System.Drawing.Point(68, 279);
+            this.LblLozinka.Name = "LblLozinka";
+            this.LblLozinka.Size = new System.Drawing.Size(61, 16);
+            this.LblLozinka.TabIndex = 13;
+            this.LblLozinka.Text = "Lozinka:";
             // 
-            // label8
+            // LblUloga
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(68, 321);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 16);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Uloga:";
+            this.LblUloga.AutoSize = true;
+            this.LblUloga.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUloga.Location = new System.Drawing.Point(68, 321);
+            this.LblUloga.Name = "LblUloga";
+            this.LblUloga.Size = new System.Drawing.Size(49, 16);
+            this.LblUloga.TabIndex = 15;
+            this.LblUloga.Text = "Uloga:";
             // 
             // TboxUloga
             // 
@@ -278,15 +278,15 @@
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnPrevious);
             this.Controls.Add(this.BtnStart);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.LblUloga);
             this.Controls.Add(this.TboxUloga);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblLozinka);
+            this.Controls.Add(this.LblEmail);
+            this.Controls.Add(this.LblJMBG);
+            this.Controls.Add(this.LblAdresa);
+            this.Controls.Add(this.LblPrezime);
+            this.Controls.Add(this.LblIme);
+            this.Controls.Add(this.LblID);
             this.Controls.Add(this.TboxLozinka);
             this.Controls.Add(this.TboxEmail);
             this.Controls.Add(this.TboxJmbg);
@@ -312,14 +312,14 @@
         private System.Windows.Forms.TextBox TboxJmbg;
         private System.Windows.Forms.TextBox TboxEmail;
         private System.Windows.Forms.TextBox TboxLozinka;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label LblID;
+        private System.Windows.Forms.Label LblIme;
+        private System.Windows.Forms.Label LblPrezime;
+        private System.Windows.Forms.Label LblAdresa;
+        private System.Windows.Forms.Label LblJMBG;
+        private System.Windows.Forms.Label LblEmail;
+        private System.Windows.Forms.Label LblLozinka;
+        private System.Windows.Forms.Label LblUloga;
         private System.Windows.Forms.TextBox TboxUloga;
         private System.Windows.Forms.Button BtnStart;
         private System.Windows.Forms.Button BtnPrevious;

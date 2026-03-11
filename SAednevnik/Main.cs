@@ -30,8 +30,30 @@ namespace SAednevnik
         private void ItemOsoba_Click(object sender, EventArgs e)
         {
             Osoba nova = new Osoba();
-            this.Hide();
-            nova.Show();
+            nova.ShowDialog();
+        }
+
+        private void ItemSmer_Click(object sender, EventArgs e)
+        {
+            Sifarnik nova = new Sifarnik("Smer");
+            nova.ShowDialog();
+        }
+
+        private void ItemOdeljenje_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ItemSkGodina_Click(object sender, EventArgs e)
+        {
+            Sifarnik nova = new Sifarnik("Skolska_godina");
+            nova.ShowDialog();
+        }
+
+        private void ItemPredmet_Click(object sender, EventArgs e)
+        {
+            Sifarnik nova = new Sifarnik("Predmet");
+            nova.ShowDialog();
         }
     }
 }
