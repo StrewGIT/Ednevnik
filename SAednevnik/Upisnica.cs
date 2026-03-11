@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Reflection.Emit;
+
+namespace SAednevnik
+{
+    public partial class Upisnica : Form
+    {
+        public Upisnica()
+        {
+            InitializeComponent();
+        }
+        private void PopulateCboxGod()
+        {
+            SqlConnection veza = Connection.connect();
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Skolska_godina",veza);
+            DataTable godina = new DataTable();
+            adapter.Fill(godina);
+            CboxGod.DataSource = godina;
+            CboxGod.ValueMember = "id";
+            CboxGod.DisplayMember = "naziv";
+        }
+        private void PopulateCboxOdeljenje()
+        {
+            SqlConnection veza = Connection.connect();
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT id, razred, indeks, godina_id, str(razred)+'-'+indeks as naziv FROM Odeljenje", veza);
+            DataTable Odeljenje = new DataTable();
+            adapter.Fill(Odeljenje);
+            CboxOdeljenje.DataSource = Odeljenje;
+            CboxOdeljenje.ValueMember = "id";
+            CboxOdeljenje.DisplayMember = "naziv";
+        }
+        private void PopulateCboxUcenik()
+        {
+            SqlConnection veza = Connection.connect();
+            SqlDataAdapter adapter = new SqlDataAdapter("SELECT id, prezime+' '+ime as naziv FROM Osoba", veza);
+            DataTable ucenik = new DataTable();
+            adapter.Fill(ucenik);
+            CboxUcenik.DataSource = ucenik;
+            CboxUcenik.ValueMember = "id";
+            CboxUcenik.DisplayMember = "naziv";
+        }
+        private void PopulateDGridView()
+        {
+            SqlConnection veza = Connection.connect();
+            string naredba = "SELECT Upisnica.id, ime+' '+prezime as ucenik, str(razred)+'-'+indeks as odel, Odeljenje.Godina_id as god_id, Odeljenje.id as odel_id, Osoba.id as os_id from Upisnica JOIN Osoba ON Osoba_id=Osoba.id JOIN Odeljenje ON Odeljenje_id=Odeljenje.id";
+            SqlDataAdapter adapter = new SqlDataAdapter(naredba, veza);
+            DataTable tabela = new DataTable();
+            adapter.Fill(tabela);
+            DGridView.DataSource = tabela;
+            DGridView.AllowUserToAddRows = false;
+            DGridView.Columns["god_id"].Visible = false;
+            DGridView.Columns["odel_id"].Visible = false;
+            DGridView.Columns["os_id"].Visible = false;
+        }
+        private void PopulateCBoxes()
+        {
+            PopulateCboxGod();
+            PopulateCboxOdeljenje();
+            PopulateCboxUcenik();
+        }
+        private void Upisnica_Load(object sender, EventArgs e)
+        {
+            PopulateCBoxes();
+            PopulateDGridView();
+        }
+    }
+}

@@ -79,35 +79,35 @@
             // ItemOsoba
             // 
             this.ItemOsoba.Name = "ItemOsoba";
-            this.ItemOsoba.Size = new System.Drawing.Size(180, 22);
+            this.ItemOsoba.Size = new System.Drawing.Size(153, 22);
             this.ItemOsoba.Text = "Osoba";
             this.ItemOsoba.Click += new System.EventHandler(this.ItemOsoba_Click);
             // 
             // ItemOdeljenje
             // 
             this.ItemOdeljenje.Name = "ItemOdeljenje";
-            this.ItemOdeljenje.Size = new System.Drawing.Size(180, 22);
+            this.ItemOdeljenje.Size = new System.Drawing.Size(153, 22);
             this.ItemOdeljenje.Text = "Odeljenje";
             this.ItemOdeljenje.Click += new System.EventHandler(this.ItemOdeljenje_Click);
             // 
             // ItemSkGodina
             // 
             this.ItemSkGodina.Name = "ItemSkGodina";
-            this.ItemSkGodina.Size = new System.Drawing.Size(180, 22);
+            this.ItemSkGodina.Size = new System.Drawing.Size(153, 22);
             this.ItemSkGodina.Text = "Skolska godina";
             this.ItemSkGodina.Click += new System.EventHandler(this.ItemSkGodina_Click);
             // 
             // ItemPredmet
             // 
             this.ItemPredmet.Name = "ItemPredmet";
-            this.ItemPredmet.Size = new System.Drawing.Size(180, 22);
+            this.ItemPredmet.Size = new System.Drawing.Size(153, 22);
             this.ItemPredmet.Text = "Predmet";
             this.ItemPredmet.Click += new System.EventHandler(this.ItemPredmet_Click);
             // 
             // ItemSmer
             // 
             this.ItemSmer.Name = "ItemSmer";
-            this.ItemSmer.Size = new System.Drawing.Size(180, 22);
+            this.ItemSmer.Size = new System.Drawing.Size(153, 22);
             this.ItemSmer.Text = "Smer";
             this.ItemSmer.Click += new System.EventHandler(this.ItemSmer_Click);
             // 
@@ -128,6 +128,7 @@
             this.ItemUpisnica.Name = "ItemUpisnica";
             this.ItemUpisnica.Size = new System.Drawing.Size(180, 22);
             this.ItemUpisnica.Text = "Upisnica";
+            this.ItemUpisnica.Click += new System.EventHandler(this.ItemUpisnica_Click);
             // 
             // ItemRaspodela
             // 

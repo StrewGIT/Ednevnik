@@ -55,5 +55,11 @@ namespace SAednevnik
             Sifarnik nova = new Sifarnik("Predmet");
             nova.ShowDialog();
         }
+
+        private void ItemUpisnica_Click(object sender, EventArgs e)
+        {
+            Upisnica nova = new Upisnica();
+            nova.ShowDialog();
+        }
     }
 }
