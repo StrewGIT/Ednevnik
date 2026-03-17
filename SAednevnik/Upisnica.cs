@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Reflection.Emit;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SAednevnik
 {
@@ -71,6 +72,18 @@ namespace SAednevnik
         {
             PopulateCBoxes();
             PopulateDGridView();
+        }
+
+        private void DGridView_CurrentCellChanged(object sender, EventArgs e)
+        {
+            if (DGridView.CurrentRow != null)
+            {
+                int brSloga = DGridView.CurrentRow.Index;
+                CboxGod.SelectedValue = DGridView.Rows[brSloga].Cells["god_id"].Value.ToString();
+                CboxOdeljenje.SelectedValue = DGridView.Rows[brSloga].Cells["odel_id"].Value.ToString();
+                CboxUcenik.SelectedValue = DGridView.Rows[brSloga].Cells["os_id"].Value.ToString();
+                TboxId.Text = DGridView.Rows[brSloga].Cells["id"].Value.ToString();
+            }
         }
     }
 }

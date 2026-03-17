@@ -50,6 +50,7 @@
             this.DGridView.Name = "DGridView";
             this.DGridView.Size = new System.Drawing.Size(719, 263);
             this.DGridView.TabIndex = 0;
+            this.DGridView.CurrentCellChanged += new System.EventHandler(this.DGridView_CurrentCellChanged);
             // 
             // TxtId
             // 
