@@ -135,6 +135,7 @@
             this.BtnDelete.TabIndex = 9;
             this.BtnDelete.Text = "Obrisi";
             this.BtnDelete.UseVisualStyleBackColor = false;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnUpdate
             // 
@@ -147,6 +148,7 @@
             this.BtnUpdate.TabIndex = 10;
             this.BtnUpdate.Text = "Ažuriraj";
             this.BtnUpdate.UseVisualStyleBackColor = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnInsert
             // 
@@ -159,6 +161,7 @@
             this.BtnInsert.TabIndex = 11;
             this.BtnInsert.Text = "Dodaj";
             this.BtnInsert.UseVisualStyleBackColor = false;
+            this.BtnInsert.Click += new System.EventHandler(this.BtnInsert_Click);
             // 
             // Upisnica
             // 

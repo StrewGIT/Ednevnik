@@ -85,5 +85,64 @@ namespace SAednevnik
                 TboxId.Text = DGridView.Rows[brSloga].Cells["id"].Value.ToString();
             }
         }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            string naredba = "DELETE FROM upisnica WHERE id=" + TboxId.Text;
+            SqlConnection veza = Connection.connect();
+            SqlCommand komanda = new SqlCommand(naredba, veza);
+            try
+            {
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+            }
+            catch (Exception greska)
+            {
+                MessageBox.Show(greska.Message);
+            }
+            PopulateDGridView();
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            string naredba = "UPDATE upisnica SET osoba_id = " + CboxUcenik.SelectedValue.ToString();
+            naredba += ", odeljenje_id=" + CboxOdeljenje.SelectedValue.ToString();
+            naredba += " WHERE id=" + TboxId.Text;
+            SqlConnection veza = Connection.connect();
+            SqlCommand komanda = new SqlCommand(naredba, veza);
+            try
+            {
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+            }
+            catch (Exception greska)
+            {
+                MessageBox.Show(greska.Message);
+            }
+            PopulateDGridView();
+        }
+
+        private void BtnInsert_Click(object sender, EventArgs e)
+        {
+            string naredba = "INSERT INTO upisnica (odeljenje_id, osoba_id) VALUES(";
+            naredba += CboxOdeljenje.SelectedValue.ToString() + ", ";
+            naredba += CboxUcenik.SelectedValue.ToString() + ")";
+            SqlConnection veza = Connection.connect();
+            SqlCommand komanda = new SqlCommand(naredba, veza);
+            try
+            {
+                veza.Open();
+                komanda.ExecuteNonQuery();
+                veza.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            PopulateDGridView();
+        }
     }
 }
